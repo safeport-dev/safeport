@@ -1,0 +1,14 @@
+{
+  "name": "@safeport/db",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Drizzle schema and migrations, built in Phase 2",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@safeport/cra",
+  "version": "0.0.0",
+  "private": true,
+  "description": "CRA deadline rules as pure functions, built in Phase 1",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

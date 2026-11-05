@@ -1,0 +1,14 @@
+{
+  "name": "@safeport/site",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Astro marketing site, docs and free tools, built in Phase 1",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}
