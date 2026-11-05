@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.turbo/
+.wrangler/
+
+# Secrets and local overrides. Committed defaults live in .env.development.
+.dev.vars*
+.env
+.env.local
+.env.*.local
+
+*.log
+.DS_Store

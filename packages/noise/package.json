@@ -1,0 +1,14 @@
+{
+  "name": "@safeport/noise",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Beg-bounty scoring rules, built in Phase 3",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

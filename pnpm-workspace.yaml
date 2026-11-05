@@ -1,0 +1,12 @@
+packages:
+  - apps/*
+  - packages/*
+
+catalog:
+  vitest: 5.1.0
+  wrangler: 4.157.0
+  zod: 4.6.7
+
+allowBuilds:
+  esbuild: true
+  workerd: true
