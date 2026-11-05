@@ -20,6 +20,13 @@ jobs:
         with:
           persist-credentials: false
       - uses: ./.github/actions/setup
+      - name: Check deploy config
+        run: |
+          : "${API_ORIGIN:?Set the API_ORIGIN repository variable}"
+          : "${WEB_ORIGIN:?Set the WEB_ORIGIN repository variable}"
+        env:
+          API_ORIGIN: ${{ vars.API_ORIGIN }}
+          WEB_ORIGIN: ${{ vars.WEB_ORIGIN }}
       - run: pnpm lint
       - run: pnpm typecheck
       - run: pnpm test

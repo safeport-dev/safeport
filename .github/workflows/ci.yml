@@ -52,6 +52,7 @@ jobs:
       - uses: ./.github/actions/setup
       - name: Work out preview URLs
         run: |
+          : "${WORKERS_SUBDOMAIN:?Set the WORKERS_SUBDOMAIN repository variable}"
           echo "API_URL=https://$ALIAS-safeport-api-preview.$WORKERS_SUBDOMAIN.workers.dev" >> "$GITHUB_ENV"
           echo "WEB_URL=https://$ALIAS-safeport-web-preview.$WORKERS_SUBDOMAIN.workers.dev" >> "$GITHUB_ENV"
       - name: Build web
