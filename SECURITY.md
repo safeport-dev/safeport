@@ -8,8 +8,9 @@ Please [report it privately through GitHub](https://github.com/safeport-dev/safe
 Don't open a public issue. Include the affected component, steps to reproduce and the impact you
 observed.
 
-We aim to acknowledge reports within 5 working days and will keep you updated as we investigate.
-Safeport is an early-stage project and doesn't currently pay bounties.
+Our target is to acknowledge reports within 5 business days. This is a target, not a guarantee. We
+will keep you updated as we investigate. Safeport is an early-stage project and doesn't currently
+pay bounties.
 
 ## Scope
 
