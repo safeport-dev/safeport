@@ -1,0 +1,21 @@
+{
+  "name": "@safeport/shared",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Zod schemas and types shared across apps",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "vitest": "catalog:"
+  }
+}

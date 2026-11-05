@@ -1,0 +1,18 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "safeport-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "observability": { "enabled": true },
+  "preview_urls": false,
+  // Local default only. CI overrides this with --var, so no deployed hostname lives in the repo.
+  "vars": { "ALLOWED_ORIGINS": "http://localhost:5173" },
+  "env": {
+    // Separate Worker for PR previews: version URLs share a Worker's resources, so previews must
+    // never run on the live Worker. See docs/adr/0001-cloudflare-platform.md.
+    "preview": {
+      "preview_urls": true,
+      "vars": { "ALLOWED_ORIGINS": "http://localhost:5173" }
+    }
+  }
+}
